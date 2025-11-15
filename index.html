@@ -85,15 +85,11 @@
         <section class="contact">
             <div class="container">
                 <h2>お問い合わせ</h2>
-                <p class="contact-text">離島振興活動へのご参加や、その他のお問い合わせは<br>お気軽にご連絡ください。</p>
+                <p class="contact-text">離島振興活動へのご参加や、その他のお問い合わせは<br>下記メールアドレスまでお気軽にご連絡ください。</p>
                 <div class="contact-email">
-                    <p><strong>📧 メールアドレス</strong></p>
-                    <p class="email-display" id="email-address"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9eeaffeaedebf0f1ecf7b0f5ffedf6f7f6ffecffb0acaeacacdef9f2f1fcf7edb0fffdb0f4ee">[email&#160;protected]</a></p>
-                    <div class="email-buttons">
-                        <a href="/cdn-cgi/l/email-protection#f084918483859e9f8299de9b9183989998918291dec2c0c2c2b0979c9f929983de9193de9a80" class="email-button primary">📩 メールを送る</a>
-                        <button onclick="copyEmail()" class="email-button secondary">📋 アドレスをコピー</button>
-                    </div>
-                    <p id="copy-message" class="copy-message">✓ コピーしました！</p>
+                    <p class="email-label">📧 メールアドレス</p>
+                    <p class="email-address"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8bffeafff8fee5e4f9e2a5e0eaf8e3e2e3eaf9eaa5b9bbb9b9cbece7e4e9e2f8a5eae8a5e1fb">[email&#160;protected]</a></p>
+                    <a href="/cdn-cgi/l/email-protection#0175607572746f6e73682f6a60726968696073602f3331333341666d6e6368722f60622f6b71" class="email-button">📩 メールを送る</a>
                 </div>
             </div>
         </section>
@@ -104,37 +100,5 @@
             <p>&copy; 2024 樫原 辰徳 All Rights Reserved.</p>
         </div>
     </footer>
-
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-    function copyEmail() {
-        const email = 'tatsunori.kashihara.2022@globis.ac.jp';
-        
-        // クリップボードにコピー
-        navigator.clipboard.writeText(email).then(function() {
-            // 成功メッセージを表示
-            const message = document.getElementById('copy-message');
-            message.style.display = 'block';
-            
-            // 2秒後にメッセージを非表示
-            setTimeout(function() {
-                message.style.display = 'none';
-            }, 2000);
-        }).catch(function(err) {
-            // 古いブラウザ用のフォールバック
-            const textarea = document.createElement('textarea');
-            textarea.value = email;
-            document.body.appendChild(textarea);
-            textarea.select();
-            document.execCommand('copy');
-            document.body.removeChild(textarea);
-            
-            const message = document.getElementById('copy-message');
-            message.style.display = 'block';
-            setTimeout(function() {
-                message.style.display = 'none';
-            }, 2000);
-        });
-    }
-    </script>
-</body>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
 </html>
